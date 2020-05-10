@@ -87,12 +87,6 @@ export default {
   },
   methods: {
     calculateEsteps() {
-      console.log(
-        "I'm called",
-        this.defaultEstep,
-        this.expectedAmount,
-        this.actualAmount
-      )
       return (this.defaultEstep * this.expectedAmount) / this.actualAmount
     }
   },
@@ -103,5 +97,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>
