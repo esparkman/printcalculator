@@ -8,8 +8,8 @@
         <label
           for="default-e-step"
           class="block text-sm font-medium leading-5 text-gray-700"
-          >Default or Current E-Step Value
-        </label>
+          >Default or Current E-Step Value</label
+        >
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="default-e-step"
@@ -27,9 +27,8 @@
         <label
           for="expected-extruded-amount"
           class="block text-sm font-medium leading-5 text-gray-700"
+          >Expected Amount of filament extruded</label
         >
-          Expected Amount of filament extruded
-        </label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="expected-extruded-amount"
@@ -48,9 +47,8 @@
         <label
           for="actual-extruded-amount"
           class="block text-sm font-medium leading-5 text-gray-700"
+          >Actual Amount of filament extruded</label
         >
-          Actual Amount of filament extruded
-        </label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="actual-extruded-amount"
@@ -68,7 +66,7 @@
     <div class="my-2">
       <div v-if="estepTotal">
         <div class="font-semibold text-black-300">
-          {{ estepTotal }}
+          New Value: {{ estepTotal }}
         </div>
       </div>
     </div>

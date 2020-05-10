@@ -8,9 +8,8 @@
         <label
           for="default-z-step"
           class="block text-sm font-medium leading-5 text-gray-700"
+          >Default or Current Z-Step Value</label
         >
-          Default or Current Z-Step Value
-        </label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="default-z-step"
@@ -29,9 +28,8 @@
         <label
           for="expected-travel-distance"
           class="block text-sm font-medium leading-5 text-gray-700"
+          >Expected Z Distance to travel</label
         >
-          Expected Z Distance to travel
-        </label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="expected-travel-distance"
@@ -50,9 +48,8 @@
         <label
           for="actual-distance-traveled"
           class="block text-sm font-medium leading-5 text-gray-700"
+          >Actual Z Distance traveled</label
         >
-          Actual Z Distance traveled
-        </label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="actual-travel-distance"
@@ -71,7 +68,7 @@
     <div class="my-2">
       <div v-if="zstepTotal">
         <div class="font-semibold text-black-300">
-          {{ zstepTotal }}
+          New Value: {{ zstepTotal }}
         </div>
       </div>
     </div>
