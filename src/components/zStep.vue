@@ -1,15 +1,12 @@
 <template>
   <div id="z-step-calculator">
-    <div class="underline font-semibold text-sm text-black-300">
-      Z-Step Calculator
-    </div>
+    <div class="underline font-semibold text-sm text-black-300">XYZ-Step Calculator</div>
     <div class="flex flex-col">
       <div class="my-2">
         <label
           for="default-z-step"
           class="block text-sm font-medium leading-5 text-gray-700"
-          >Default or Current Z-Step Value</label
-        >
+        >Default or Current X, Y or Z-Step Value</label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="default-z-step"
@@ -20,16 +17,16 @@
             required
           />
         </div>
-        <p class="mt-2 text-sm text-gray-500" id="estep-description">
-          This should be your default or current z-step value.
-        </p>
+        <p
+          class="mt-2 text-sm text-gray-500"
+          id="estep-description"
+        >This should be your default or current X, Y or Z-step value.</p>
       </div>
       <div class="my-2">
         <label
           for="expected-travel-distance"
           class="block text-sm font-medium leading-5 text-gray-700"
-          >Expected Z Distance to travel</label
-        >
+        >Expected X, Y or Z Distance to travel</label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="expected-travel-distance"
@@ -40,16 +37,16 @@
             required
           />
         </div>
-        <p class="mt-2 text-sm text-gray-500" id="estep-description">
-          This is the expected distance to be traveled on the Z Axis.
-        </p>
+        <p
+          class="mt-2 text-sm text-gray-500"
+          id="estep-description"
+        >This is the expected distance to be traveled on the X, Y or Z Axis.</p>
       </div>
       <div class="my-2">
         <label
           for="actual-distance-traveled"
           class="block text-sm font-medium leading-5 text-gray-700"
-          >Actual Z Distance traveled</label
-        >
+        >Actual X, Y or Z Distance traveled</label>
         <div class="mt-1 relative rounded-md shadow-sm">
           <input
             id="actual-travel-distance"
@@ -60,16 +57,15 @@
             required
           />
         </div>
-        <p class="mt-2 text-sm text-gray-500" id="estep-description">
-          This is the actual distance traveled on the Z Axis.
-        </p>
+        <p
+          class="mt-2 text-sm text-gray-500"
+          id="estep-description"
+        >This is the actual distance traveled on the X, Y or Z Axis.</p>
       </div>
     </div>
     <div class="my-2">
       <div v-if="zstepTotal">
-        <div class="font-semibold text-black-300">
-          New Value: {{ zstepTotal }}
-        </div>
+        <div class="font-semibold text-black-300">New Value: {{ zstepTotal }}</div>
       </div>
     </div>
   </div>
